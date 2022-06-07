@@ -1,0 +1,40 @@
+{% load static extra_settings  %}
+<!--  footer -->
+<footer id="footer">
+  <div class="footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12 mb-4">
+            <h3 class="text-center w-100">Меню</h3>
+            <ul class="link_menu d-flex flex-wrap justify-content-center">
+                <li><a class="px-2" href="#index">Главная</a></li>
+                <li><a class="px-2" href="#about">Галерея</a></li>
+                <li><a class="px-2" href="#we-do">Сертификаты</a></li>
+                <li><a class="px-2" href="#pricing">Услуги</a></li>
+                <li><a class="px-2" href="#contact">Мастера</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col-12 col-md-4">
+            <ul class="conta mx-auto">
+              <li><i class="fa fa-map-marker" aria-hidden="true"></i> {% get_setting 'ADDRESS' default='г. Ростов-на-Дону, ул. Пушкина №72' %}</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="conta mx-auto">
+              <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:{% get_setting 'PHONE' default='+7(999) 555-33-33' %}"></a>{% get_setting 'PHONE' default='+7(999) 555-33-33' %}</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="conta mx-auto">
+              <li> <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:{% get_setting 'EMAIL' default='salon-manicure@test.com' %}">{% get_setting 'EMAIL' default='salon-manicure@test.com' %}</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</footer>
+<!-- end footer -->

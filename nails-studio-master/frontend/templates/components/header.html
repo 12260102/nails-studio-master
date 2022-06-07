@@ -1,0 +1,39 @@
+{% load static extra_settings %}
+
+
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand logo" href="/">
+      {% get_setting 'LOGO_TEXT' default='NailsStudio'  %}
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Главная</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% if request.path != '/' %}/{% endif %}#about">Галерея</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% if request.path != '/' %}/{% endif %}#we-do">Сертификаты</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% if request.path != '/' %}/{% endif %}#pricing">Услуги</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% if request.path != '/' %}/{% endif %}#course">Курсы</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% if request.path != '/' %}/{% endif %}#contact">Мастера</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% if request.path != '/' %}/{% endif %}#footer">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
